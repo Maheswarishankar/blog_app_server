@@ -21,7 +21,7 @@ app.use(express.json());
 app.use(cors());
 
 //test server
-app.get("/", (rq, res) => {
+app.get("/", (req, res) => {
     res.status(200).json({ message: "Server started successfully!!!" })
 
 })
